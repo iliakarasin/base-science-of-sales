@@ -1,0 +1,53 @@
+/* Base - Science of Sales
+ * Author: Ilia Karasin © 2016
+ * Helper Mixins */
+
+// Center
+@mixin center($direction, $position:"absolute") {
+  @if $direction == x {
+    position: if($position == relative, relative, absolute);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @else if $direction == y {
+    position: if($position == relative, relative, absolute);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $direction == xy {
+    left: 50%;
+    position: if($position == relative, relative, absolute);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// BG transparency
+@mixin transparent-bg($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie: ie($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie},endColorstr=#{$ie});
+  zoom: 1;
+}
+
+// Calc rem
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Transition
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
