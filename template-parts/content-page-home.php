@@ -40,7 +40,7 @@
         $img = get_sub_field('section_image');
         $float = get_sub_field('image_float');
     ?>
-        <section class="<?php if ($class) : echo $class . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
+        <section class="home-section <?php if ($class) : echo $class . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
             <div class="outer-container">
                 <?php if ($float == 'right') : ?>
                     <div class="inner-container copy">

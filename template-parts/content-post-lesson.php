@@ -32,6 +32,7 @@
 <?php if( have_rows('lesson_sections') ): ?>
     <?php while( have_rows('lesson_sections') ): the_row();
         // vars
+        $note = get_sub_field('section_note');
         $class = get_sub_field('section_class');
         $title = get_sub_field('section_title');
         $copy =  get_sub_field('section_copy');
@@ -43,14 +44,18 @@
             <div class="outer-container">
                 <?php if ($float == 'right') : ?>
                     <div class="inner-container copy">
+                        <?php if ($note) : ?>
+                            <p class="note blue"><?php echo $note; ?></p>
+                        <?php endif; ?>
+
                         <?php if ($title) : ?>
-                            <h3 class="section-title"><?php echo $title; ?></h3>
+                            <h3><?php echo $title; ?></h3>
                         <?php endif; ?>
 
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p><?php echo $copy; ?></p>
+                            <p class="section-copy"><?php echo $copy; ?></p>
                         <?php endif; ?>
                     </div>
 
@@ -69,14 +74,18 @@
                     </div>
 
                     <div class="inner-container copy">
+                        <?php if ($note) : ?>
+                            <p class="note blue"><?php echo $note; ?></p>
+                        <?php endif; ?>
+
                         <?php if ($title) : ?>
-                            <h3 class="section-title"><?php echo $title; ?></h3>
+                            <h3><?php echo $title; ?></h3>
                         <?php endif; ?>
 
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p><?php echo $copy; ?></p>
+                            <p c><?php echo $copy; ?></p>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

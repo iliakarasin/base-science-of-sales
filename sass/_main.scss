@@ -11,6 +11,11 @@
     padding: 100px 0;
 }
 
+.home-section,
+.lesson-section {
+    padding: 100px 0;
+}
+
 .home-hero {
     .hero-title,
     .hero-content {
@@ -18,6 +23,11 @@
         @include shift(2);
         @include omega;
     }
+}
+
+.home-section {
+    background-color: $color-dk-blue;
+    border-top: 1px solid $color-white;
 }
 
 // Lessons
@@ -30,6 +40,20 @@
     }
 }
 
-.lesson-section:nth-child(odd) {
-    background-color: $color-lt-white;
+.lesson-section {
+    &:nth-child(odd) {
+        background-color: $color-lt-white;
+    }
+
+    p {
+        color: $color-navy;
+
+        &.blue {
+            color: $color-blue;
+        }
+
+        &.note {
+            padding-bottom: 1em;
+        }
+    }
 }

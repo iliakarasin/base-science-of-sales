@@ -167,8 +167,9 @@ p {
   color: #f2f3f2;
   line-height: 14px;
 }
-/* line 65, ../sass/_fonts.scss */
-p.note {
+
+/* line 66, ../sass/_fonts.scss */
+.note {
   text-transform: uppercase;
   font-size: 11px;
   font-size: 0.6875rem;
@@ -271,7 +272,7 @@ section.float-right .inner-container.copy, section.float-left .inner-container.c
   display: block;
   margin-right: 3.44828%;
   width: 31.03448%;
-  background: yellow;
+  border: 1px solid yellow;
 }
 /* line 89, ../neat/grid/_span-columns.scss */
 section.float-right .inner-container.copy:last-child, section.float-left .inner-container.copy:last-child {
@@ -279,7 +280,7 @@ section.float-right .inner-container.copy:last-child, section.float-left .inner-
 }
 /* line 21, ../sass/_global.scss */
 section.float-right .inner-container.img, section.float-left .inner-container.img {
-  background: blue;
+  border: 1px solid blue;
   float: left;
   display: block;
   margin-right: 3.44828%;
@@ -327,7 +328,7 @@ section.float-right .inner-container.img:last-child, section.float-left .inner-c
   cursor: pointer;
 }
 
-/* line 54, ../sass/_global.scss */
+/* line 53, ../sass/_global.scss */
 footer {
   background-color: #5497eb;
 }
@@ -344,7 +345,13 @@ footer {
   padding: 100px 0;
 }
 
-/* line 15, ../sass/_main.scss */
+/* line 14, ../sass/_main.scss */
+.home-section,
+.lesson-section {
+  padding: 100px 0;
+}
+
+/* line 20, ../sass/_main.scss */
 .home-hero .hero-title,
 .home-hero .hero-content {
   float: left;
@@ -360,11 +367,17 @@ footer {
   margin-right: 0;
 }
 
-/* line 24, ../sass/_main.scss */
+/* line 28, ../sass/_main.scss */
+.home-section {
+  background-color: #22282d;
+  border-top: 1px solid #fff;
+}
+
+/* line 34, ../sass/_main.scss */
 .lesson-hero {
   text-align: left;
 }
-/* line 27, ../sass/_main.scss */
+/* line 37, ../sass/_main.scss */
 .lesson-hero .lesson-hero-content {
   float: left;
   display: block;
@@ -377,7 +390,19 @@ footer {
   margin-right: 0;
 }
 
-/* line 33, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .lesson-section:nth-child(odd) {
   background-color: #f2f3f2;
+}
+/* line 48, ../sass/_main.scss */
+.lesson-section p {
+  color: #2f3848;
+}
+/* line 51, ../sass/_main.scss */
+.lesson-section p.blue {
+  color: #5497eb;
+}
+/* line 55, ../sass/_main.scss */
+.lesson-section p.note {
+  padding-bottom: 1em;
 }
