@@ -1,0 +1,68 @@
+<?php
+/**
+ * Template part for displaying posts.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Base:_Science_of_Sales
+ */
+
+?>
+<section id="post-<?php the_ID(); ?>" class="lesson-hero">
+    <div class="outer-container">
+        <p class="note blue">Base Presents</p>
+
+        <hr />
+
+        <h1 class="home-hero-title"><?php the_field('hero_title'); ?></h1>
+
+        <div class="home-hero-content">
+            <h2><?php
+                the_field('hero_copy');
+            ?></h2>
+        </div><!-- .hero-content -->
+
+        <div class="clear-both"></div>
+
+        <a class="home-hero-cta button" href="<?php the_field('hero_cta_url'); ?>">
+            <?php the_field('hero_cta'); ?>
+        </a><!-- .hero-cta -->
+    </div>
+</section><!-- #post-## -->
+
+<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <header class="entry-header">
+        <?php
+            if ( is_single() ) {
+                the_title( '<h1 class="entry-title">', '</h1>' );
+            } else {
+                the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+            }
+
+        if ( 'post' === get_post_type() ) : ?>
+        <div class="entry-meta">
+            <?php base_science_of_sales_posted_on(); ?>
+        </div><!-- .entry-meta -->
+        <?php
+        endif; ?>
+    </header><!-- .entry-header -->
+
+    <div class="entry-content">
+        <?php
+            the_content( sprintf(
+                /* translators: %s: Name of current post. */
+                wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'base-science-of-sales' ), array( 'span' => array( 'class' => array() ) ) ),
+                the_title( '<span class="screen-reader-text">"', '"</span>', false )
+            ) );
+
+            wp_link_pages( array(
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base-science-of-sales' ),
+                'after'  => '</div>',
+            ) );
+        ?>
+    </div><!-- .entry-content -->
+
+    <footer class="entry-footer">
+        <?php base_science_of_sales_entry_footer(); ?>
+    </footer><!-- .entry-footer -->
+</section><!-- #post-## -->

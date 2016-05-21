@@ -4,9 +4,13 @@
 
 @import 'compass/reset';
 @import '../bourbon/bourbon';
-@import 'grid-settings';
+@import 'grid';
 @import '../neat/neat';
 
-@import 'settings';
 @import 'helpers';
+@import 'settings';
 @import 'fonts';
+
+@import 'header';
+@import 'global';
+@import 'main';

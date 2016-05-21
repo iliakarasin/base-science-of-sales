@@ -1,0 +1,56 @@
+/* Base - Science of Sales
+ * Author: Ilia Karasin © 2016
+ * Global styles */
+
+.clear-both {
+    clear: both;
+}
+
+.site {
+    position: relative;
+}
+
+section {
+    &.float-right,
+    &.float-left {
+        .inner-container.copy {
+            @include span-columns(4);
+            background:yellow;
+        }
+
+        .inner-container.img {
+            background: blue;
+            @include span-columns(8);
+        }
+    }
+}
+
+.outer-container {
+    @include outer-container();
+    // background: salmon;
+    height: 100%;
+    position: relative;
+}
+
+// Buttons
+.button {
+    @include border-radius(3px);
+    @include font-size(10px);
+    background: $color-blue;
+    color: $color-white;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 10px;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+footer {
+    background-color: $color-blue;
+}

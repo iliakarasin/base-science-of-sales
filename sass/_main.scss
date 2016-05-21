@@ -1,0 +1,17 @@
+/* Base - Science of Sales
+ * Author: Ilia Karasin © 2016
+ * Main styles */
+
+.home-hero {
+    background-color: $color-dk-blue;
+    color: $color-white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.home-hero-title,
+.home-hero-content {
+    @include span-columns(8);
+    @include shift(2);
+    @include omega;
+}
