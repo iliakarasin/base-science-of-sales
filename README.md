@@ -4,7 +4,7 @@ Base: Science of Sales micro site theme, based on the underscores boilerplate th
 
 Dependencies
 -------
-[Bourbon Neat](http://neat.bourbon.io/)
+[Bourbon Neat](http://neat.bourbon.io/)<br />
 [Compass](compass-style.org)
 
 Installation
