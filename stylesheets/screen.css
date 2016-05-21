@@ -164,8 +164,8 @@ p {
   font-family: 'Gotham Light', Helvetica, sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
-  color: #f2f3f2;
-  line-height: 14px;
+  color: #f2f2f2;
+  line-height: 24px;
 }
 
 /* line 66, ../sass/_fonts.scss */
@@ -306,7 +306,13 @@ section.float-right .inner-container.img:last-child, section.float-left .inner-c
   display: table;
 }
 
-/* line 36, ../sass/_global.scss */
+/* line 35, ../sass/_global.scss */
+hr {
+  background-color: #f2f2f2;
+  opacity: .25;
+}
+
+/* line 41, ../sass/_global.scss */
 .button {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -323,12 +329,12 @@ section.float-right .inner-container.img:last-child, section.float-left .inner-c
   padding: 12px 20px;
   text-decoration: none;
 }
-/* line 48, ../sass/_global.scss */
+/* line 53, ../sass/_global.scss */
 .button:hover {
   cursor: pointer;
 }
 
-/* line 53, ../sass/_global.scss */
+/* line 59, ../sass/_global.scss */
 footer {
   background-color: #5497eb;
 }
@@ -375,13 +381,14 @@ footer {
 /* line 32, ../sass/_main.scss */
 .home-section .section-title {
   color: #fff;
+  font-family: "Gotham Book", Helvetica, sans-serif;
 }
 
-/* line 38, ../sass/_main.scss */
+/* line 39, ../sass/_main.scss */
 .lesson-hero {
   text-align: left;
 }
-/* line 41, ../sass/_main.scss */
+/* line 42, ../sass/_main.scss */
 .lesson-hero .lesson-hero-content {
   float: left;
   display: block;
@@ -394,19 +401,19 @@ footer {
   margin-right: 0;
 }
 
-/* line 48, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .lesson-section:nth-child(odd) {
-  background-color: #f2f3f2;
+  background-color: #f2f2f2;
 }
-/* line 53, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .lesson-section p.section-copy {
   color: #2f3848;
 }
-/* line 57, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .lesson-section p.blue {
   color: #5497eb;
 }
-/* line 61, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 .lesson-section p.note {
   padding-bottom: 1em;
 }

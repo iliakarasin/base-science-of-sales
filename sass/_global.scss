@@ -32,6 +32,11 @@ section {
     // padding: 0 20px;
 }
 
+hr {
+    background-color: $color-lt-white;
+    opacity: .25;
+}
+
 // Buttons
 .button {
     @include border-radius(3px);
@@ -50,6 +55,7 @@ section {
     }
 }
 
+// Footer
 footer {
     background-color: $color-blue;
 }
