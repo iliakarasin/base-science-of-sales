@@ -15,9 +15,9 @@
 
         <hr />
 
-        <h1 class="home-hero-title"><?php the_field('hero_title'); ?></h1>
+        <h1 class="hero-title"><?php the_field('hero_title'); ?></h1>
 
-        <div class="home-hero-content">
+        <div class="hero-content">
             <h2><?php
                 the_field('hero_copy');
             ?></h2>

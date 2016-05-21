@@ -134,7 +134,7 @@ body:before {
 h1,
 h2,
 h3 {
-  font-family: 'Gotham Book', Helvetica, sans-serif;
+  font-family: 'Gotham Light', Helvetica, sans-serif;
 }
 
 /* line 43, ../sass/_fonts.scss */
@@ -335,17 +335,18 @@ footer {
 /* Base - Science of Sales
  * Author: Ilia Karasin © 2016
  * Main styles */
-/* line 5, ../sass/_main.scss */
-.home-hero {
+/* line 6, ../sass/_main.scss */
+.home-hero,
+.lesson-hero {
   background-color: #22282d;
   color: #fff;
   text-align: center;
   padding: 100px 0;
 }
 
-/* line 12, ../sass/_main.scss */
-.home-hero-title,
-.home-hero-content {
+/* line 15, ../sass/_main.scss */
+.home-hero .hero-title,
+.home-hero .hero-content {
   float: left;
   display: block;
   margin-right: 3.44828%;
@@ -354,7 +355,29 @@ footer {
   margin-right: 0;
 }
 /* line 89, ../neat/grid/_span-columns.scss */
-.home-hero-title:last-child,
-.home-hero-content:last-child {
+.home-hero .hero-title:last-child,
+.home-hero .hero-content:last-child {
   margin-right: 0;
+}
+
+/* line 24, ../sass/_main.scss */
+.lesson-hero {
+  text-align: left;
+}
+/* line 27, ../sass/_main.scss */
+.lesson-hero .lesson-hero-content {
+  float: left;
+  display: block;
+  margin-right: 3.44828%;
+  width: 39.65517%;
+  margin-right: 0;
+}
+/* line 89, ../neat/grid/_span-columns.scss */
+.lesson-hero .lesson-hero-content:last-child {
+  margin-right: 0;
+}
+
+/* line 33, ../sass/_main.scss */
+.lesson-section:nth-child(odd) {
+  background-color: #f2f3f2;
 }

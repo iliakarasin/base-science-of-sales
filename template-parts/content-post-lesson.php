@@ -10,59 +10,77 @@
 ?>
 <section id="post-<?php the_ID(); ?>" class="lesson-hero">
     <div class="outer-container">
-        <p class="note blue">Base Presents</p>
+        <div class="lesson-hero-content">
+            <p class="note blue"><?php the_title(); ?></p>
+            <h1 class="hero-title"><?php the_field('hero_title'); ?></h1>
 
-        <hr />
+            <div class="hero-content">
+                <h2><?php
+                    the_field('hero_copy');
+                ?></h2>
+            </div><!-- .hero-content -->
 
-        <h1 class="home-hero-title"><?php the_field('hero_title'); ?></h1>
+            <div class="clear-both"></div>
 
-        <div class="home-hero-content">
-            <h2><?php
-                the_field('hero_copy');
-            ?></h2>
-        </div><!-- .hero-content -->
-
-        <div class="clear-both"></div>
-
-        <a class="home-hero-cta button" href="<?php the_field('hero_cta_url'); ?>">
-            <?php the_field('hero_cta'); ?>
-        </a><!-- .hero-cta -->
+            <a class="hero-cta button" href="<?php the_field('hero_cta_url'); ?>">
+                <?php the_field('hero_cta_copy'); ?>
+            </a><!-- .hero-cta -->
+        </div>
     </div>
 </section><!-- #post-## -->
 
-<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
-        <?php
-            if ( is_single() ) {
-                the_title( '<h1 class="entry-title">', '</h1>' );
-            } else {
-                the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-            }
+<?php if( have_rows('lesson_sections') ): ?>
+    <?php while( have_rows('lesson_sections') ): the_row();
+        // vars
+        $class = get_sub_field('section_class');
+        $title = get_sub_field('section_title');
+        $copy =  get_sub_field('section_copy');
+        $img = get_sub_field('section_image');
+        $float = get_sub_field('image_float');
+        $hr = get_sub_field('dividing_line')
+    ?>
+        <section class="lesson-section <?php if ($class) : echo $class . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
+            <div class="outer-container">
+                <?php if ($float == 'right') : ?>
+                    <div class="inner-container copy">
+                        <?php if ($title) : ?>
+                            <h3 class="section-title"><?php echo $title; ?></h3>
+                        <?php endif; ?>
 
-        if ( 'post' === get_post_type() ) : ?>
-        <div class="entry-meta">
-            <?php base_science_of_sales_posted_on(); ?>
-        </div><!-- .entry-meta -->
-        <?php
-        endif; ?>
-    </header><!-- .entry-header -->
+                        <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
-    <div class="entry-content">
-        <?php
-            the_content( sprintf(
-                /* translators: %s: Name of current post. */
-                wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'base-science-of-sales' ), array( 'span' => array( 'class' => array() ) ) ),
-                the_title( '<span class="screen-reader-text">"', '"</span>', false )
-            ) );
+                        <?php if ($copy) : ?>
+                            <p><?php echo $copy; ?></p>
+                        <?php endif; ?>
+                    </div>
 
-            wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base-science-of-sales' ),
-                'after'  => '</div>',
-            ) );
-        ?>
-    </div><!-- .entry-content -->
+                    <div class="inner-container img">
+                        <?//php if ($img) : ?>
+                            <i><b>FPO</b></i>
+                        <?//php endif; ?>
+                    </div>
+                <?php endif; ?>
 
-    <footer class="entry-footer">
-        <?php base_science_of_sales_entry_footer(); ?>
-    </footer><!-- .entry-footer -->
-</section><!-- #post-## -->
+                <?php if ($float == 'left') : ?>
+                    <div class="inner-container img">
+                        <?//php if ($img) : ?>
+                            <i><b>FPO</b></i>
+                        <?//php endif; ?>
+                    </div>
+
+                    <div class="inner-container copy">
+                        <?php if ($title) : ?>
+                            <h3 class="section-title"><?php echo $title; ?></h3>
+                        <?php endif; ?>
+
+                        <?php if ($hr == true) : ?><hr /><?php endif; ?>
+
+                        <?php if ($copy) : ?>
+                            <p><?php echo $copy; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>

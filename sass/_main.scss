@@ -2,16 +2,34 @@
  * Author: Ilia Karasin © 2016
  * Main styles */
 
-.home-hero {
+// Home
+.home-hero,
+.lesson-hero {
     background-color: $color-dk-blue;
     color: $color-white;
     text-align: center;
     padding: 100px 0;
 }
 
-.home-hero-title,
-.home-hero-content {
-    @include span-columns(8);
-    @include shift(2);
-    @include omega;
+.home-hero {
+    .hero-title,
+    .hero-content {
+        @include span-columns(8);
+        @include shift(2);
+        @include omega;
+    }
+}
+
+// Lessons
+.lesson-hero {
+    text-align: left;
+
+    .lesson-hero-content {
+        @include span-columns(5);
+        @include omega();
+    }
+}
+
+.lesson-section:nth-child(odd) {
+    background-color: $color-lt-white;
 }
