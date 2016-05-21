@@ -28,6 +28,10 @@
 .home-section {
     background-color: $color-dk-blue;
     border-top: 1px solid $color-white;
+
+    .section-title {
+        color: $color-white;
+    }
 }
 
 // Lessons
@@ -46,7 +50,9 @@
     }
 
     p {
-        color: $color-navy;
+        &.section-copy {
+            color: $color-navy;
+        }
 
         &.blue {
             color: $color-blue;

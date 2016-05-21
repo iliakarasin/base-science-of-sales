@@ -39,6 +39,7 @@
         $copy =  get_sub_field('section_copy');
         $img = get_sub_field('section_image');
         $float = get_sub_field('image_float');
+        $hr = get_sub_field('dividing_line');
     ?>
         <section class="home-section <?php if ($class) : echo $class . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
             <div class="outer-container">
@@ -47,6 +48,8 @@
                         <?php if ($title) : ?>
                             <h3 class="section-title"><?php echo $title; ?></h3>
                         <?php endif; ?>
+
+                        <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
                             <p><?php echo $copy; ?></p>
@@ -71,6 +74,8 @@
                         <?php if ($title) : ?>
                             <h3 class="section-title"><?php echo $title; ?></h3>
                         <?php endif; ?>
+
+                        <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
                             <p><?php echo $copy; ?></p>
