@@ -7,8 +7,9 @@
  * @package Base:_Science_of_Sales
  */
 
+$hero_bg = get_field('hero_image');
 ?>
-<section id="post-<?php the_ID(); ?>" class="lesson-hero">
+<section id="post-<?php the_ID(); ?>" class="lesson-hero" style="background-image: url(<?php if (!empty($hero_bg)) : echo $hero_bg['url']; endif; ?>);">
     <div class="outer-container">
         <div class="lesson-hero-content">
             <p class="note blue"><?php the_title(); ?></p>
@@ -60,17 +61,17 @@
                     </div>
 
                     <div class="inner-container img">
-                        <?//php if ($img) : ?>
-                            <i><b>FPO</b></i>
-                        <?//php endif; ?>
+                        <?php if (!empty($img)) : ?>
+                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
+                        <?php endif; ?>
                     </div>
                 <?php endif; ?>
 
                 <?php if ($float == 'left') : ?>
                     <div class="inner-container img">
-                        <?//php if ($img) : ?>
-                            <i><b>FPO</b></i>
-                        <?//php endif; ?>
+                        <?php if (!empty($img)) : ?>
+                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
+                        <?php endif; ?>
                     </div>
 
                     <div class="inner-container copy">
