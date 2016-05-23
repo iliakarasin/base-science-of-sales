@@ -419,8 +419,15 @@ footer {
 .lesson-section {
   padding: 100px 0;
 }
+@media screen and (max-width: 480px) {
+  /* line 18, ../sass/_main.scss */
+  .home-section,
+  .lesson-section {
+    padding: 50px 10px;
+  }
+}
 
-/* line 24, ../sass/_main.scss */
+/* line 28, ../sass/_main.scss */
 .home-hero .hero-title,
 .home-hero .hero-content {
   float: left;
@@ -436,7 +443,7 @@ footer {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 32, ../sass/_main.scss */
+  /* line 36, ../sass/_main.scss */
   .home-hero .hero-title,
   .home-hero .hero-content {
     float: left;
@@ -453,22 +460,32 @@ footer {
   }
 }
 
-/* line 41, ../sass/_main.scss */
+/* line 45, ../sass/_main.scss */
 .home-section {
   background-color: #22282d;
   border-top: 1px solid #fff;
 }
-/* line 45, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .home-section .section-title {
   color: #fff;
   font-family: "Gotham Book", Helvetica, sans-serif;
 }
 
-/* line 52, ../sass/_main.scss */
+/* line 56, ../sass/_main.scss */
 .lesson-hero {
   text-align: left;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
 }
-/* line 55, ../sass/_main.scss */
+@media screen and (max-width: 480px) {
+  /* line 56, ../sass/_main.scss */
+  .lesson-hero {
+    padding-bottom: 200px;
+    background-position: center bottom;
+  }
+}
+/* line 69, ../sass/_main.scss */
 .lesson-hero .lesson-hero-content {
   float: left;
   display: block;
@@ -480,20 +497,48 @@ footer {
 .lesson-hero .lesson-hero-content:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 480px) {
+  /* line 69, ../sass/_main.scss */
+  .lesson-hero .lesson-hero-content {
+    float: left;
+    display: block;
+    margin-right: 11.11111%;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+  /* line 89, ../neat/grid/_span-columns.scss */
+  .lesson-hero .lesson-hero-content:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 62, ../sass/_main.scss */
+@media screen and (max-width: 480px) {
+  /* line 81, ../sass/_main.scss */
+  .lesson-section {
+    float: left;
+    display: block;
+    margin-right: 11.11111%;
+    width: 100%;
+  }
+  /* line 89, ../neat/grid/_span-columns.scss */
+  .lesson-section:last-child {
+    margin-right: 0;
+  }
+}
+/* line 86, ../sass/_main.scss */
 .lesson-section:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 67, ../sass/_main.scss */
+/* line 91, ../sass/_main.scss */
 .lesson-section p.section-copy {
   color: #2f3848;
 }
-/* line 71, ../sass/_main.scss */
+/* line 95, ../sass/_main.scss */
 .lesson-section p.blue {
   color: #5497eb;
 }
-/* line 75, ../sass/_main.scss */
+/* line 99, ../sass/_main.scss */
 .lesson-section p.note {
   padding-bottom: 1em;
 }

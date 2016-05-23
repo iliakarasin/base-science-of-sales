@@ -18,6 +18,10 @@
 .home-section,
 .lesson-section {
     padding: 100px 0;
+
+    @include media($mobile) {
+        padding: 50px 10px;
+    }
 }
 
 .home-hero {
@@ -50,15 +54,35 @@
 
 // Lessons
 .lesson-hero {
+    @include media($mobile) {
+        padding-bottom: 200px;
+        background-position: center bottom;
+    }
+
     text-align: left;
+    background: {
+        size: 40%;
+        repeat: no-repeat;
+        position: 90% bottom;
+    }
 
     .lesson-hero-content {
         @include span-columns(5);
         @include omega();
+
+        @include media($mobile) {
+            @include span-columns(4);
+            padding: 0 10px;
+            text-align: center;
+        }
     }
 }
 
 .lesson-section {
+    @include media($mobile) {
+        @include span-columns(4);
+    }
+
     &:nth-child(odd) {
         background-color: $color-lt-white;
     }
