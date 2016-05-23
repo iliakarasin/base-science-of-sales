@@ -25,14 +25,17 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="outer-container">
             <a class="site-branding" href="<?php home_url(); ?>">
-            &nbsp;
+                &nbsp;
             </a><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation" role="navigation">
                 <!-- @TODO: add hamburger for mobile -->
                 <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button> -->
+
                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                <a href="#" class="button">Start Course</a>
+
+                <a href="#" class="button start-course">Start Course</a>
+
                 <div class="clear-both"></div>
             </nav><!-- #site-navigation -->
         </div>

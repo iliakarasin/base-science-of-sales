@@ -10,17 +10,29 @@
     position: relative;
 }
 
-section {
+.home-section {
     &.float-right,
     &.float-left {
         .inner-container.copy {
             @include span-columns(4);
             border: 1px solid yellow;
+
+            @include media($mobile) {
+                @include span-columns(4);
+                @include shift(0);
+                padding: 0 10px;
+            }
         }
 
         .inner-container.img {
             border: 1px solid blue;
             @include span-columns(8);
+
+            @include media($mobile) {
+                @include span-columns(4);
+                @include shift(0);
+                padding: 0 10px;
+            }
         }
     }
 }

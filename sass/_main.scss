@@ -9,6 +9,10 @@
     color: $color-white;
     text-align: center;
     padding: 100px 0;
+
+    @include media($mobile) {
+        padding: 50px 0;
+    }
 }
 
 .home-section,
@@ -22,6 +26,15 @@
         @include span-columns(8);
         @include shift(2);
         @include omega;
+    }
+
+    @include media($mobile) {
+        .hero-title,
+        .hero-content {
+            @include span-columns(4);
+            @include shift(0);
+            padding: 0 10px;
+        }
     }
 }
 
@@ -64,3 +77,4 @@
         }
     }
 }
+

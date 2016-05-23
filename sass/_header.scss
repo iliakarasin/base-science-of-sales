@@ -3,6 +3,10 @@
  * Header styles */
 
 .site-header {
+    @include media($mobile) {
+        padding: 0 10px;
+    }
+
     background: $color-dk-gray;
     height: 75px;
     width: 100%;

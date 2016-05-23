@@ -2,6 +2,9 @@
  * Author: Ilia Karasin © 2016
  * Grid Settings */
 
+// Do not delete, imported for responsive help
+@import "../neat/neat-helpers";
+
 // Change the grid settings
 $column: 60px;
 $gutter: 40px;
@@ -14,5 +17,3 @@ $visual-grid: true;
 // Define your breakpoints
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 4);
-
-// @TODO: add breakpoint mixins for mobile, tablet, small screen
