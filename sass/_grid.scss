@@ -17,3 +17,4 @@ $visual-grid: true;
 // Define your breakpoints
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 4);
+$grid-end: new-breakpoint(max-width 1160px 12);

@@ -20,8 +20,11 @@
 .lesson-section {
     padding: 100px 0;
 
+    @include media($grid-end) {
+        padding: 100px 10px;
+    }
+
     @include media($mobile) {
-        padding: 50px 10px;
         text-align: center;
     }
 }
@@ -39,7 +42,6 @@
         .hero-content {
             @include span-columns(4);
             @include shift(0);
-            padding: 0 10px;
         }
     }
 }
@@ -56,8 +58,12 @@
 
 // Lessons
 .lesson-hero {
-    @include media($mobile) {
-        padding-bottom: 200px;
+    @include media($grid-end) {
+        padding: 100px 10px;
+    }
+
+    @include media($tablet) {
+        padding-bottom: 45%;
         background-position: center bottom;
     }
 
@@ -69,12 +75,11 @@
     }
 
     .lesson-hero-content {
-        @include span-columns(5);
+        @include span-columns(6);
         @include omega();
 
-        @include media($mobile) {
-            @include span-columns(4);
-            padding: 0 10px;
+        @include media($tablet) {
+            @include span-columns(8);
             text-align: center;
         }
     }

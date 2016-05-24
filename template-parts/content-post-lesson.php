@@ -9,7 +9,7 @@
 
 $hero_bg = get_field('hero_image');
 ?>
-<section id="post-<?php the_ID(); ?>" class="lesson-hero" style="background-image: url(<?php if (!empty($hero_bg)) : echo $hero_bg['url']; endif; ?>);">
+<section id="post-<?php the_ID(); ?>" class="lesson-hero" style="background-image: url(<?php if (!empty($hero_bg)) : echo esc_html($hero_bg['url']); endif; ?>);">
     <div class="outer-container">
         <div class="lesson-hero-content">
             <p class="note blue"><?php the_title(); ?></p>
@@ -41,28 +41,28 @@ $hero_bg = get_field('hero_image');
         $float = get_sub_field('image_float');
         $hr = get_sub_field('dividing_line')
     ?>
-        <section class="lesson-section <?php if ($class) : echo $class . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
+        <section class="lesson-section <?php if ($class) : echo esc_html($class) . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
             <div class="outer-container">
                 <?php if ($float == 'right') : ?>
                     <div class="inner-container copy">
                         <?php if ($note) : ?>
-                            <p class="note blue"><?php echo $note; ?></p>
+                            <p class="note blue"><?php echo esc_html($note); ?></p>
                         <?php endif; ?>
 
                         <?php if ($title) : ?>
-                            <h3><?php echo $title; ?></h3>
+                            <h3><?php echo esc_html($title); ?></h3>
                         <?php endif; ?>
 
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p class="section-copy"><?php echo $copy; ?></p>
+                            <p class="section-copy"><?php echo esc_html($copy); ?></p>
                         <?php endif; ?>
                     </div>
 
                     <div class="inner-container img">
                         <?php if (!empty($img)) : ?>
-                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
+                            <img src="<?php echo esc_html($img['url']); ?>" alt="<?php echo esc_html($img['alt']); ?>" />
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
@@ -70,23 +70,23 @@ $hero_bg = get_field('hero_image');
                 <?php if ($float == 'left') : ?>
                     <div class="inner-container img">
                         <?php if (!empty($img)) : ?>
-                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
+                            <img src="<?php echo esc_html($img['url']); ?>" alt="<?php echo esc_html($img['alt']); ?>" />
                         <?php endif; ?>
                     </div>
 
                     <div class="inner-container copy">
                         <?php if ($note) : ?>
-                            <p class="note blue"><?php echo $note; ?></p>
+                            <p class="note blue"><?php echo esc_html($note); ?></p>
                         <?php endif; ?>
 
                         <?php if ($title) : ?>
-                            <h3><?php echo $title; ?></h3>
+                            <h3><?php echo esc_html($title); ?></h3>
                         <?php endif; ?>
 
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p c><?php echo $copy; ?></p>
+                            <p c><?php echo esc_html($copy); ?></p>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

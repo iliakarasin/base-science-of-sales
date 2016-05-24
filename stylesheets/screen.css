@@ -120,6 +120,16 @@ body:before {
     background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 16.66667%, transparent 16.66667%, transparent 27.77778%, #eee 27.77778%, #eee 44.44444%, transparent 44.44444%, transparent 55.55556%, #eee 55.55556%, #eee 72.22222%, transparent 72.22222%, transparent 83.33333%, #eee 83.33333%, #eee 100%, transparent 100%);
   }
 }
+@media screen and (max-width: 1160px) {
+  /* line 12, ../neat/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 5.17241%, transparent 5.17241%, transparent 8.62069%, #eee 8.62069%, #eee 13.7931%, transparent 13.7931%, transparent 17.24138%, #eee 17.24138%, #eee 22.41379%, transparent 22.41379%, transparent 25.86207%, #eee 25.86207%, #eee 31.03448%, transparent 31.03448%, transparent 34.48276%, #eee 34.48276%, #eee 39.65517%, transparent 39.65517%, transparent 43.10345%, #eee 43.10345%, #eee 48.27586%, transparent 48.27586%, transparent 51.72414%, #eee 51.72414%, #eee 56.89655%, transparent 56.89655%, transparent 60.34483%, #eee 60.34483%, #eee 65.51724%, transparent 65.51724%, transparent 68.96552%, #eee 68.96552%, #eee 74.13793%, transparent 74.13793%, transparent 77.58621%, #eee 77.58621%, #eee 82.75862%, transparent 82.75862%, transparent 86.2069%, #eee 86.2069%, #eee 91.37931%, transparent 91.37931%, transparent 94.82759%, #eee 94.82759%, #eee 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 5.17241%, transparent 5.17241%, transparent 8.62069%, #eee 8.62069%, #eee 13.7931%, transparent 13.7931%, transparent 17.24138%, #eee 17.24138%, #eee 22.41379%, transparent 22.41379%, transparent 25.86207%, #eee 25.86207%, #eee 31.03448%, transparent 31.03448%, transparent 34.48276%, #eee 34.48276%, #eee 39.65517%, transparent 39.65517%, transparent 43.10345%, #eee 43.10345%, #eee 48.27586%, transparent 48.27586%, transparent 51.72414%, #eee 51.72414%, #eee 56.89655%, transparent 56.89655%, transparent 60.34483%, #eee 60.34483%, #eee 65.51724%, transparent 65.51724%, transparent 68.96552%, #eee 68.96552%, #eee 74.13793%, transparent 74.13793%, transparent 77.58621%, #eee 77.58621%, #eee 82.75862%, transparent 82.75862%, transparent 86.2069%, #eee 86.2069%, #eee 91.37931%, transparent 91.37931%, transparent 94.82759%, #eee 94.82759%, #eee 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 5.17241%, transparent 5.17241%, transparent 8.62069%, #eee 8.62069%, #eee 13.7931%, transparent 13.7931%, transparent 17.24138%, #eee 17.24138%, #eee 22.41379%, transparent 22.41379%, transparent 25.86207%, #eee 25.86207%, #eee 31.03448%, transparent 31.03448%, transparent 34.48276%, #eee 34.48276%, #eee 39.65517%, transparent 39.65517%, transparent 43.10345%, #eee 43.10345%, #eee 48.27586%, transparent 48.27586%, transparent 51.72414%, #eee 51.72414%, #eee 56.89655%, transparent 56.89655%, transparent 60.34483%, #eee 60.34483%, #eee 65.51724%, transparent 65.51724%, transparent 68.96552%, #eee 68.96552%, #eee 74.13793%, transparent 74.13793%, transparent 77.58621%, #eee 77.58621%, #eee 82.75862%, transparent 82.75862%, transparent 86.2069%, #eee 86.2069%, #eee 91.37931%, transparent 91.37931%, transparent 94.82759%, #eee 94.82759%, #eee 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 5.17241%, transparent 5.17241%, transparent 8.62069%, #eee 8.62069%, #eee 13.7931%, transparent 13.7931%, transparent 17.24138%, #eee 17.24138%, #eee 22.41379%, transparent 22.41379%, transparent 25.86207%, #eee 25.86207%, #eee 31.03448%, transparent 31.03448%, transparent 34.48276%, #eee 34.48276%, #eee 39.65517%, transparent 39.65517%, transparent 43.10345%, #eee 43.10345%, #eee 48.27586%, transparent 48.27586%, transparent 51.72414%, #eee 51.72414%, #eee 56.89655%, transparent 56.89655%, transparent 60.34483%, #eee 60.34483%, #eee 65.51724%, transparent 65.51724%, transparent 68.96552%, #eee 68.96552%, #eee 74.13793%, transparent 74.13793%, transparent 77.58621%, #eee 77.58621%, #eee 82.75862%, transparent 82.75862%, transparent 86.2069%, #eee 86.2069%, #eee 91.37931%, transparent 91.37931%, transparent 94.82759%, #eee 94.82759%, #eee 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 5.17241%, transparent 5.17241%, transparent 8.62069%, #eee 8.62069%, #eee 13.7931%, transparent 13.7931%, transparent 17.24138%, #eee 17.24138%, #eee 22.41379%, transparent 22.41379%, transparent 25.86207%, #eee 25.86207%, #eee 31.03448%, transparent 31.03448%, transparent 34.48276%, #eee 34.48276%, #eee 39.65517%, transparent 39.65517%, transparent 43.10345%, #eee 43.10345%, #eee 48.27586%, transparent 48.27586%, transparent 51.72414%, #eee 51.72414%, #eee 56.89655%, transparent 56.89655%, transparent 60.34483%, #eee 60.34483%, #eee 65.51724%, transparent 65.51724%, transparent 68.96552%, #eee 68.96552%, #eee 74.13793%, transparent 74.13793%, transparent 77.58621%, #eee 77.58621%, #eee 82.75862%, transparent 82.75862%, transparent 86.2069%, #eee 86.2069%, #eee 91.37931%, transparent 91.37931%, transparent 94.82759%, #eee 94.82759%, #eee 100%, transparent 100%);
+  }
+}
 
 /* Base - Science of Sales
  * Author: Ilia Karasin © 2016
@@ -151,20 +161,18 @@ body:before {
   font-style: normal;
 }
 /* line 38, ../sass/_fonts.scss */
-h1,
-h2,
-h3 {
+body {
   font-family: 'Gotham Light', Helvetica, sans-serif;
 }
 
-/* line 44, ../sass/_fonts.scss */
+/* line 42, ../sass/_fonts.scss */
 h1 {
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 52px;
 }
 
-/* line 49, ../sass/_fonts.scss */
+/* line 47, ../sass/_fonts.scss */
 h2 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -172,14 +180,14 @@ h2 {
   margin: 40px 0 45px;
 }
 
-/* line 55, ../sass/_fonts.scss */
+/* line 53, ../sass/_fonts.scss */
 h3 {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 28px;
 }
 
-/* line 60, ../sass/_fonts.scss */
+/* line 58, ../sass/_fonts.scss */
 p {
   font-family: 'Gotham Light', Helvetica, sans-serif;
   font-size: 14px;
@@ -188,7 +196,7 @@ p {
   line-height: 24px;
 }
 
-/* line 67, ../sass/_fonts.scss */
+/* line 65, ../sass/_fonts.scss */
 .note {
   text-transform: uppercase;
   font-size: 11px;
@@ -198,21 +206,21 @@ p {
   padding-bottom: 20px;
 }
 
-/* line 75, ../sass/_fonts.scss */
+/* line 73, ../sass/_fonts.scss */
 a.button {
   font-family: 'Gotham Light', Helvetica, sans-serif;
 }
-/* line 78, ../sass/_fonts.scss */
+/* line 76, ../sass/_fonts.scss */
 a.button:visited {
   color: inherit;
 }
 
-/* line 83, ../sass/_fonts.scss */
+/* line 81, ../sass/_fonts.scss */
 .blue {
   color: #5497eb;
 }
 
-/* line 87, ../sass/_fonts.scss */
+/* line 85, ../sass/_fonts.scss */
 .white {
   color: #fff;
 }
@@ -227,7 +235,7 @@ a.button:visited {
   width: 100%;
   position: relative;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1160px) {
   /* line 5, ../sass/_header.scss */
   .site-header {
     padding: 0 10px;
@@ -292,36 +300,40 @@ a.button:visited {
   position: relative;
 }
 
-/* line 16, ../sass/_global.scss */
+@media screen and (max-width: 1160px) {
+  /* line 13, ../sass/_global.scss */
+  .home-section {
+    padding: 0 10px;
+  }
+}
+/* line 20, ../sass/_global.scss */
 .home-section.float-right .inner-container.copy, .home-section.float-left .inner-container.copy {
   float: left;
   display: block;
   margin-right: 3.44828%;
   width: 31.03448%;
-  border: 1px solid yellow;
 }
 /* line 89, ../neat/grid/_span-columns.scss */
 .home-section.float-right .inner-container.copy:last-child, .home-section.float-left .inner-container.copy:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 16, ../sass/_global.scss */
+  /* line 20, ../sass/_global.scss */
   .home-section.float-right .inner-container.copy, .home-section.float-left .inner-container.copy {
     float: left;
     display: block;
     margin-right: 11.11111%;
     width: 100%;
     margin-left: 0%;
-    padding: 0 10px;
+    margin-bottom: 20%;
   }
   /* line 89, ../neat/grid/_span-columns.scss */
   .home-section.float-right .inner-container.copy:last-child, .home-section.float-left .inner-container.copy:last-child {
     margin-right: 0;
   }
 }
-/* line 27, ../sass/_global.scss */
+/* line 30, ../sass/_global.scss */
 .home-section.float-right .inner-container.img, .home-section.float-left .inner-container.img {
-  border: 1px solid blue;
   float: left;
   display: block;
   margin-right: 3.44828%;
@@ -332,14 +344,13 @@ a.button:visited {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 27, ../sass/_global.scss */
+  /* line 30, ../sass/_global.scss */
   .home-section.float-right .inner-container.img, .home-section.float-left .inner-container.img {
     float: left;
     display: block;
     margin-right: 11.11111%;
     width: 100%;
     margin-left: 0%;
-    padding: 0 10px;
   }
   /* line 89, ../neat/grid/_span-columns.scss */
   .home-section.float-right .inner-container.img:last-child, .home-section.float-left .inner-container.img:last-child {
@@ -347,7 +358,7 @@ a.button:visited {
   }
 }
 
-/* line 40, ../sass/_global.scss */
+/* line 41, ../sass/_global.scss */
 .outer-container {
   max-width: 1160px;
   margin-left: auto;
@@ -362,13 +373,20 @@ a.button:visited {
   display: table;
 }
 
-/* line 47, ../sass/_global.scss */
+/* line 48, ../sass/_global.scss */
 hr {
   background-color: #f2f2f2;
   opacity: .25;
 }
+@media screen and (max-width: 1160px) {
+  /* line 53, ../sass/_global.scss */
+  hr.hero {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
-/* line 53, ../sass/_global.scss */
+/* line 63, ../sass/_global.scss */
 .button {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -385,14 +403,47 @@ hr {
   padding: 12px 20px;
   text-decoration: none;
 }
-/* line 65, ../sass/_global.scss */
+/* line 75, ../sass/_global.scss */
 .button:hover {
   cursor: pointer;
 }
 
-/* line 71, ../sass/_global.scss */
+/* line 81, ../sass/_global.scss */
 footer {
+  font-size: 10px;
+  font-size: 0.625rem;
   background-color: #5497eb;
+  color: #fff;
+  height: 60px;
+}
+@media screen and (max-width: 1160px) {
+  /* line 81, ../sass/_global.scss */
+  footer {
+    padding: 0 10px;
+  }
+}
+/* line 91, ../sass/_global.scss */
+footer .site-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 480px) {
+  /* line 91, ../sass/_global.scss */
+  footer .site-info {
+    text-align: center;
+    width: 100%;
+  }
+}
+/* line 100, ../sass/_global.scss */
+footer .menu-footer-container,
+footer .menu-item {
+  display: inline-block;
+}
+/* line 105, ../sass/_global.scss */
+footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Base - Science of Sales
@@ -420,16 +471,22 @@ footer {
 .lesson-section {
   padding: 100px 0;
 }
+@media screen and (max-width: 1160px) {
+  /* line 19, ../sass/_main.scss */
+  .home-section,
+  .lesson-section {
+    padding: 100px 10px;
+  }
+}
 @media screen and (max-width: 480px) {
   /* line 19, ../sass/_main.scss */
   .home-section,
   .lesson-section {
-    padding: 50px 10px;
     text-align: center;
   }
 }
 
-/* line 30, ../sass/_main.scss */
+/* line 33, ../sass/_main.scss */
 .home-hero .hero-title,
 .home-hero .hero-content {
   float: left;
@@ -445,7 +502,7 @@ footer {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 38, ../sass/_main.scss */
+  /* line 41, ../sass/_main.scss */
   .home-hero .hero-title,
   .home-hero .hero-content {
     float: left;
@@ -453,7 +510,6 @@ footer {
     margin-right: 11.11111%;
     width: 100%;
     margin-left: 0%;
-    padding: 0 10px;
   }
   /* line 89, ../neat/grid/_span-columns.scss */
   .home-hero .hero-title:last-child,
@@ -462,51 +518,56 @@ footer {
   }
 }
 
-/* line 47, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .home-section {
   background-color: #22282d;
   border-top: 1px solid #fff;
 }
-/* line 51, ../sass/_main.scss */
+/* line 53, ../sass/_main.scss */
 .home-section .section-title {
   color: #fff;
   font-family: "Gotham Book", Helvetica, sans-serif;
 }
 
-/* line 58, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .lesson-hero {
   text-align: left;
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 90% bottom;
 }
-@media screen and (max-width: 480px) {
-  /* line 58, ../sass/_main.scss */
+@media screen and (max-width: 1160px) {
+  /* line 60, ../sass/_main.scss */
   .lesson-hero {
-    padding-bottom: 200px;
+    padding: 100px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 60, ../sass/_main.scss */
+  .lesson-hero {
+    padding-bottom: 45%;
     background-position: center bottom;
   }
 }
-/* line 71, ../sass/_main.scss */
+/* line 77, ../sass/_main.scss */
 .lesson-hero .lesson-hero-content {
   float: left;
   display: block;
   margin-right: 3.44828%;
-  width: 39.65517%;
+  width: 48.27586%;
   margin-right: 0;
 }
 /* line 89, ../neat/grid/_span-columns.scss */
 .lesson-hero .lesson-hero-content:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 480px) {
-  /* line 71, ../sass/_main.scss */
+@media screen and (max-width: 768px) {
+  /* line 77, ../sass/_main.scss */
   .lesson-hero .lesson-hero-content {
     float: left;
     display: block;
-    margin-right: 11.11111%;
+    margin-right: 5.26316%;
     width: 100%;
-    padding: 0 10px;
     text-align: center;
   }
   /* line 89, ../neat/grid/_span-columns.scss */
@@ -516,7 +577,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 83, ../sass/_main.scss */
+  /* line 88, ../sass/_main.scss */
   .lesson-section {
     float: left;
     display: block;
@@ -528,19 +589,19 @@ footer {
     margin-right: 0;
   }
 }
-/* line 88, ../sass/_main.scss */
+/* line 93, ../sass/_main.scss */
 .lesson-section:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 93, ../sass/_main.scss */
+/* line 98, ../sass/_main.scss */
 .lesson-section p.section-copy {
   color: #2f3848;
 }
-/* line 97, ../sass/_main.scss */
+/* line 102, ../sass/_main.scss */
 .lesson-section p.blue {
   color: #5497eb;
 }
-/* line 101, ../sass/_main.scss */
+/* line 106, ../sass/_main.scss */
 .lesson-section p.note {
   padding-bottom: 1em;
 }

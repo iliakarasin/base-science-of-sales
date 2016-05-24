@@ -3,7 +3,7 @@
  * Header styles */
 
 .site-header {
-    @include media($mobile) {
+    @include media($grid-end) {
         padding: 0 10px;
     }
 
