@@ -12,6 +12,7 @@
 
     @include media($mobile) {
         padding: 50px 0;
+        text-align: center;
     }
 }
 
@@ -21,6 +22,7 @@
 
     @include media($mobile) {
         padding: 50px 10px;
+        text-align: center;
     }
 }
 

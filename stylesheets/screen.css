@@ -411,23 +411,25 @@ footer {
   .home-hero,
   .lesson-hero {
     padding: 50px 0;
+    text-align: center;
   }
 }
 
-/* line 18, ../sass/_main.scss */
+/* line 19, ../sass/_main.scss */
 .home-section,
 .lesson-section {
   padding: 100px 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 18, ../sass/_main.scss */
+  /* line 19, ../sass/_main.scss */
   .home-section,
   .lesson-section {
     padding: 50px 10px;
+    text-align: center;
   }
 }
 
-/* line 28, ../sass/_main.scss */
+/* line 30, ../sass/_main.scss */
 .home-hero .hero-title,
 .home-hero .hero-content {
   float: left;
@@ -443,7 +445,7 @@ footer {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 36, ../sass/_main.scss */
+  /* line 38, ../sass/_main.scss */
   .home-hero .hero-title,
   .home-hero .hero-content {
     float: left;
@@ -460,18 +462,18 @@ footer {
   }
 }
 
-/* line 45, ../sass/_main.scss */
+/* line 47, ../sass/_main.scss */
 .home-section {
   background-color: #22282d;
   border-top: 1px solid #fff;
 }
-/* line 49, ../sass/_main.scss */
+/* line 51, ../sass/_main.scss */
 .home-section .section-title {
   color: #fff;
   font-family: "Gotham Book", Helvetica, sans-serif;
 }
 
-/* line 56, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .lesson-hero {
   text-align: left;
   background-size: 40%;
@@ -479,13 +481,13 @@ footer {
   background-position: 90% bottom;
 }
 @media screen and (max-width: 480px) {
-  /* line 56, ../sass/_main.scss */
+  /* line 58, ../sass/_main.scss */
   .lesson-hero {
     padding-bottom: 200px;
     background-position: center bottom;
   }
 }
-/* line 69, ../sass/_main.scss */
+/* line 71, ../sass/_main.scss */
 .lesson-hero .lesson-hero-content {
   float: left;
   display: block;
@@ -498,7 +500,7 @@ footer {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 69, ../sass/_main.scss */
+  /* line 71, ../sass/_main.scss */
   .lesson-hero .lesson-hero-content {
     float: left;
     display: block;
@@ -514,7 +516,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 81, ../sass/_main.scss */
+  /* line 83, ../sass/_main.scss */
   .lesson-section {
     float: left;
     display: block;
@@ -526,19 +528,19 @@ footer {
     margin-right: 0;
   }
 }
-/* line 86, ../sass/_main.scss */
+/* line 88, ../sass/_main.scss */
 .lesson-section:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 91, ../sass/_main.scss */
+/* line 93, ../sass/_main.scss */
 .lesson-section p.section-copy {
   color: #2f3848;
 }
-/* line 95, ../sass/_main.scss */
+/* line 97, ../sass/_main.scss */
 .lesson-section p.blue {
   color: #5497eb;
 }
-/* line 99, ../sass/_main.scss */
+/* line 101, ../sass/_main.scss */
 .lesson-section p.note {
   padding-bottom: 1em;
 }
