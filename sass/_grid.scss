@@ -15,6 +15,7 @@ $max-width: 1160px;
 $visual-grid: true;
 
 // Define your breakpoints
+$grid-end: new-breakpoint(max-width 1160px 12); // seamless padding
+$smdesk: new-breakpoint(max-width 1024px 10);
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 4);
-$grid-end: new-breakpoint(max-width 1160px 12);

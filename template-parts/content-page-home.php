@@ -10,7 +10,8 @@
 $hero_bg = get_field('hero_background');
 ?>
 
-<section id="page-<?php the_ID(); ?>" class="home-hero" style="background-image: url(<?php if (!empty($hero_bg)) : echo esc_html($hero_bg['url']); endif; ?>);">
+<section id="page-<?php the_ID(); ?>" class="home-hero">
+<!-- style="background-image: url(<?php if (!empty($hero_bg)) : echo esc_html($hero_bg['url']); endif; ?>);" -->
     <div class="outer-container">
         <p class="note blue">Base Presents</p>
 
@@ -31,6 +32,8 @@ $hero_bg = get_field('hero_background');
         </a><!-- .hero-cta -->
     </div>
 </section><!-- #page-## -->
+
+<img class="waves" src="<?php if (!empty($hero_bg)) : echo esc_html($hero_bg['url']); endif; ?>" />
 
 <?php if( have_rows('body') ): ?>
     <?php while( have_rows('body') ): the_row();

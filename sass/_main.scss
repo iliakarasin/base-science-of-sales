@@ -35,6 +35,16 @@
         @include span-columns(8);
         @include shift(2);
         @include omega;
+        position: relative;
+        z-index: 1;
+    }
+
+    @include media($smdesk) {
+        padding-bottom: 400px;
+    }
+
+    @include media($tablet) {
+        padding-bottom: 100px;
     }
 
     @include media($mobile) {
@@ -109,3 +119,23 @@
     }
 }
 
+
+.waves {
+    z-index: 0;
+    position: absolute;
+    top: 35%;
+
+    @include media($smdesk) {
+        @include transform(scale(1));
+        top: 15%;
+    }
+
+    @include media($tablet) {
+        @include transform(scale(1.5));
+        top: 25%;
+    }
+
+    @include media($mobile) {
+        @include transform(scale(3));
+    }
+}
