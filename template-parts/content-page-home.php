@@ -56,7 +56,7 @@ $hero_bg = get_field('hero_background');
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p><?php echo esc_html($copy); ?></p>
+                            <p><?php echo $copy; ?></p>
                         <?php endif; ?>
                     </div>
 
@@ -82,7 +82,7 @@ $hero_bg = get_field('hero_background');
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p><?php echo esc_html($copy); ?></p>
+                            <p><?php echo $copy; ?></p>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
@@ -90,3 +90,19 @@ $hero_bg = get_field('hero_background');
         </section>
     <?php endwhile; ?>
 <?php endif; ?>
+
+<section class="lesson-lead blue">
+    <div class="outer-container">
+        <p class="note">Lesson #1</p>
+
+        <h1 class="lesson-lead-title">A Scientific Approach to Sales</h1>
+
+        <div class="lesson-lead-content">
+            <h2>In this lesson, we’ll dive into how we can take a scientific approach to sales. We will provide examples and tools to apply this skill.</h2>
+        </div><!-- .lesson-lead-content -->
+
+        <div class="clear-both"></div>
+
+        <a class="lesson-lead-cta button black" href="http://local.wordpress.dev/">Start Lesson</a><!-- .lesson-lead-cta -->
+    </div>
+</section>

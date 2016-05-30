@@ -39,7 +39,7 @@ $hero_bg = get_field('hero_image');
         $copy =  get_sub_field('section_copy');
         $img = get_sub_field('section_image');
         $float = get_sub_field('image_float');
-        $hr = get_sub_field('dividing_line')
+        $hr = get_sub_field('dividing_line');
     ?>
         <section class="lesson-section <?php if ($class) : echo esc_html($class) . ' '; endif; if ($float) : echo 'float-' . $float; endif; ?>">
             <div class="outer-container">
@@ -56,7 +56,7 @@ $hero_bg = get_field('hero_image');
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p class="section-copy"><?php echo esc_html($copy); ?></p>
+                            <p class="section-copy"><?php echo $copy; ?></p>
                         <?php endif; ?>
                     </div>
 
@@ -86,7 +86,7 @@ $hero_bg = get_field('hero_image');
                         <?php if ($hr == true) : ?><hr /><?php endif; ?>
 
                         <?php if ($copy) : ?>
-                            <p c><?php echo esc_html($copy); ?></p>
+                            <p class="section-copy"><?php echo $copy; ?></p>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

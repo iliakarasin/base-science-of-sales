@@ -30,13 +30,26 @@
 
 // Nav
 .main-navigation {
-    @include span-columns(4);
-    @include shift(8);
-    background: salmon;
-    float: right;
+    width: auto;
     right: 0;
 
-    a {
+    .menu-navigation-container,
+    .start-course {
         display: inline-block;
+    }
+
+    li {
+        @include font-size(12px);
+        line-height: 14px;
+        margin: {
+            right: 30px;
+        }
+
+        a {
+            display: block;
+            height: 100%;
+            padding-top: 10px;
+            color: $color-white;
+        }
     }
 }

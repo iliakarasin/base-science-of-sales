@@ -220,17 +220,13 @@ p {
 a.button {
   font-family: 'Gotham Light', Helvetica, sans-serif;
 }
-/* line 76, ../sass/_fonts.scss */
-a.button:visited {
-  color: inherit;
-}
 
-/* line 81, ../sass/_fonts.scss */
+/* line 77, ../sass/_fonts.scss */
 .blue {
   color: #5497eb;
 }
 
-/* line 85, ../sass/_fonts.scss */
+/* line 81, ../sass/_fonts.scss */
 .white {
   color: #fff;
 }
@@ -279,22 +275,27 @@ a.button:visited {
 
 /* line 32, ../sass/_header.scss */
 .main-navigation {
-  float: left;
-  display: block;
-  margin-right: 3.44828%;
-  width: 31.03448%;
-  margin-left: 68.96552%;
-  background: salmon;
-  float: right;
+  width: auto;
   right: 0;
 }
-/* line 89, ../neat/grid/_span-columns.scss */
-.main-navigation:last-child {
-  margin-right: 0;
-}
-/* line 39, ../sass/_header.scss */
-.main-navigation a {
+/* line 36, ../sass/_header.scss */
+.main-navigation .menu-navigation-container,
+.main-navigation .start-course {
   display: inline-block;
+}
+/* line 41, ../sass/_header.scss */
+.main-navigation li {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 14px;
+  margin-right: 30px;
+}
+/* line 48, ../sass/_header.scss */
+.main-navigation li a {
+  display: block;
+  height: 100%;
+  padding-top: 10px;
+  color: #fff;
 }
 
 /* Base - Science of Sales
@@ -417,8 +418,17 @@ hr {
 .button:hover {
   cursor: pointer;
 }
+/* line 83, ../sass/_global.scss */
+.button.black {
+  background-color: #000;
+  color: #fff;
+}
+/* line 88, ../sass/_global.scss */
+.button.home-hero-cta {
+  color: #fff;
+}
 
-/* line 81, ../sass/_global.scss */
+/* line 94, ../sass/_global.scss */
 footer {
   font-size: 10px;
   font-size: 0.625rem;
@@ -427,33 +437,38 @@ footer {
   height: 60px;
 }
 @media screen and (max-width: 1160px) {
-  /* line 81, ../sass/_global.scss */
+  /* line 94, ../sass/_global.scss */
   footer {
     padding: 0 10px;
   }
 }
-/* line 91, ../sass/_global.scss */
+/* line 104, ../sass/_global.scss */
 footer .site-info {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 @media screen and (max-width: 480px) {
-  /* line 91, ../sass/_global.scss */
+  /* line 104, ../sass/_global.scss */
   footer .site-info {
     text-align: center;
     width: 100%;
   }
 }
-/* line 100, ../sass/_global.scss */
+/* line 113, ../sass/_global.scss */
 footer .menu-footer-container,
 footer .menu-item {
   display: inline-block;
 }
-/* line 105, ../sass/_global.scss */
+/* line 118, ../sass/_global.scss */
 footer a {
   text-decoration: none;
   color: #fff;
+}
+
+/* line 124, ../sass/_global.scss */
+b {
+  font-weight: 700;
 }
 
 /* Base - Science of Sales
@@ -513,11 +528,10 @@ footer a {
 .home-hero .hero-content:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 1024px) {
-  /* line 32, ../sass/_main.scss */
-  .home-hero {
-    padding-bottom: 400px;
-  }
+/* line 42, ../sass/_main.scss */
+.home-hero .home-hero-cta {
+  z-index: 1;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   /* line 32, ../sass/_main.scss */
@@ -526,7 +540,7 @@ footer a {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 51, ../sass/_main.scss */
+  /* line 52, ../sass/_main.scss */
   .home-hero .hero-title,
   .home-hero .hero-content {
     float: left;
@@ -542,18 +556,18 @@ footer a {
   }
 }
 
-/* line 59, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .home-section {
   background-color: #22282d;
   border-top: 1px solid #fff;
 }
-/* line 63, ../sass/_main.scss */
+/* line 64, ../sass/_main.scss */
 .home-section .section-title {
   color: #fff;
   font-family: "Gotham Book", Helvetica, sans-serif;
 }
 
-/* line 70, ../sass/_main.scss */
+/* line 71, ../sass/_main.scss */
 .lesson-hero {
   text-align: left;
   background-size: 40%;
@@ -561,19 +575,19 @@ footer a {
   background-position: 90% bottom;
 }
 @media screen and (max-width: 1160px) {
-  /* line 70, ../sass/_main.scss */
+  /* line 71, ../sass/_main.scss */
   .lesson-hero {
     padding: 100px 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 70, ../sass/_main.scss */
+  /* line 71, ../sass/_main.scss */
   .lesson-hero {
     padding-bottom: 45%;
     background-position: center bottom;
   }
 }
-/* line 87, ../sass/_main.scss */
+/* line 88, ../sass/_main.scss */
 .lesson-hero .lesson-hero-content {
   float: left;
   display: block;
@@ -586,7 +600,7 @@ footer a {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 87, ../sass/_main.scss */
+  /* line 88, ../sass/_main.scss */
   .lesson-hero .lesson-hero-content {
     float: left;
     display: block;
@@ -601,7 +615,7 @@ footer a {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 98, ../sass/_main.scss */
+  /* line 99, ../sass/_main.scss */
   .lesson-section {
     float: left;
     display: block;
@@ -613,19 +627,19 @@ footer a {
     margin-right: 0;
   }
 }
-/* line 103, ../sass/_main.scss */
+/* line 104, ../sass/_main.scss */
 .lesson-section:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 108, ../sass/_main.scss */
+/* line 109, ../sass/_main.scss */
 .lesson-section p.section-copy {
   color: #2f3848;
 }
-/* line 112, ../sass/_main.scss */
+/* line 113, ../sass/_main.scss */
 .lesson-section p.blue {
   color: #5497eb;
 }
-/* line 116, ../sass/_main.scss */
+/* line 117, ../sass/_main.scss */
 .lesson-section p.note {
   padding-bottom: 1em;
 }
@@ -634,7 +648,7 @@ footer a {
 .waves {
   z-index: 0;
   position: absolute;
-  top: 35%;
+  top: 10%;
 }
 @media screen and (max-width: 1024px) {
   /* line 123, ../sass/_main.scss */
@@ -666,5 +680,44 @@ footer a {
     -ms-transform: scale(3);
     -o-transform: scale(3);
     transform: scale(3);
+  }
+}
+
+/* line 143, ../sass/_main.scss */
+.lesson-lead {
+  background-color: #5497eb;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 149, ../sass/_main.scss */
+.lesson-lead .lesson-lead-title,
+.lesson-lead .lesson-lead-content {
+  float: left;
+  display: block;
+  margin-right: 3.44828%;
+  width: 65.51724%;
+  margin-left: 17.24138%;
+  margin-right: 0;
+}
+/* line 89, ../neat/grid/_span-columns.scss */
+.lesson-lead .lesson-lead-title:last-child,
+.lesson-lead .lesson-lead-content:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  /* line 157, ../sass/_main.scss */
+  .lesson-lead .lesson-lead-title,
+  .lesson-lead .lesson-lead-content {
+    float: left;
+    display: block;
+    margin-right: 11.11111%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* line 89, ../neat/grid/_span-columns.scss */
+  .lesson-lead .lesson-lead-title:last-child,
+  .lesson-lead .lesson-lead-content:last-child {
+    margin-right: 0;
   }
 }

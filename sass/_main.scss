@@ -39,8 +39,9 @@
         z-index: 1;
     }
 
-    @include media($smdesk) {
-        padding-bottom: 400px;
+    .home-hero-cta {
+        z-index: 1;
+        position: relative;
     }
 
     @include media($tablet) {
@@ -119,11 +120,10 @@
     }
 }
 
-
 .waves {
     z-index: 0;
     position: absolute;
-    top: 35%;
+    top: 10%;
 
     @include media($smdesk) {
         @include transform(scale(1));
@@ -137,5 +137,27 @@
 
     @include media($mobile) {
         @include transform(scale(3));
+    }
+}
+
+.lesson-lead {
+    background-color: $color-blue;
+    color: $color-white;
+    padding: 100px 0;
+    text-align: center;
+
+    .lesson-lead-title,
+    .lesson-lead-content {
+        @include span-columns(8);
+        @include shift(2);
+        @include omega;
+    }
+
+    @include media($mobile) {
+        .lesson-lead-title,
+        .lesson-lead-content {
+            @include span-columns(4);
+            @include shift(0);
+        }
     }
 }
