@@ -424,11 +424,11 @@ hr {
   color: #fff;
 }
 /* line 88, ../sass/_global.scss */
-.button.home-hero-cta {
+.button.home-hero-cta, .button.hero-cta {
   color: #fff;
 }
 
-/* line 94, ../sass/_global.scss */
+/* line 95, ../sass/_global.scss */
 footer {
   font-size: 10px;
   font-size: 0.625rem;
@@ -437,36 +437,36 @@ footer {
   height: 60px;
 }
 @media screen and (max-width: 1160px) {
-  /* line 94, ../sass/_global.scss */
+  /* line 95, ../sass/_global.scss */
   footer {
     padding: 0 10px;
   }
 }
-/* line 104, ../sass/_global.scss */
+/* line 105, ../sass/_global.scss */
 footer .site-info {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 @media screen and (max-width: 480px) {
-  /* line 104, ../sass/_global.scss */
+  /* line 105, ../sass/_global.scss */
   footer .site-info {
     text-align: center;
     width: 100%;
   }
 }
-/* line 113, ../sass/_global.scss */
+/* line 114, ../sass/_global.scss */
 footer .menu-footer-container,
 footer .menu-item {
   display: inline-block;
 }
-/* line 118, ../sass/_global.scss */
+/* line 119, ../sass/_global.scss */
 footer a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 124, ../sass/_global.scss */
+/* line 125, ../sass/_global.scss */
 b {
   font-weight: 700;
 }

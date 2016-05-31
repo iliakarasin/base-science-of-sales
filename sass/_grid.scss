@@ -13,6 +13,7 @@ $max-width: 1160px;
 
 // @TODO: temp for dev
 $visual-grid: true;
+// $visual-grid-color: salmon;
 
 // Define your breakpoints
 $grid-end: new-breakpoint(max-width 1160px 12); // seamless padding
